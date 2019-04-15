@@ -28,16 +28,16 @@ body{
     width: 6%;
     height: auto;
 }
-.signin{
+.home-buttons{
     list-style: none;
     margin-top: -20px;
     float: right;
 }
-.signin li{
+.home-buttons li{
     display: inline-block;
     margin-top: 0;
 }
-.signin li a{
+.home-buttons li a{
     color: white;
     text-decoration: none;
     margin-top: 0;
@@ -46,7 +46,7 @@ body{
     font-family: "Roboto", sans-serif;
     font-size: 100%;
 }
-.signin li a:hover{
+.home-buttons li a:hover{
     border: 1px solid;
     color: rgb(11, 180, 11);
     font-size: 110%;
@@ -83,6 +83,84 @@ body{
     text-decoration: none;
 }
 
+/* signup-page */
+body.image{
+    background-image: linear-gradient(rgba(3, 1, 32, 0.5), rgba(0,0,0,0.5)), url(../assets/signup.jpg);
+}
+.signup-page{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.info{
+    padding-right: 20%;
+    columns: white;
+    width: 70%;
+}
+.info h3{
+    font-size: 250%;
+    color: #FFFFFF;
+}
+.info h4{
+    font-size: 200%;
+    color: lightgray;
+}
+  .form {
+    padding-right: 30px;
+    width: 30%;
+    padding: 8% 0 0;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    flex-basis: 50%;
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 13px;
+    padding: 13px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background:  rgb(84, 87, 102);
+    
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: rgb(231, 225, 225);
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: rgb(17, 17, 17);
+  color: #FFFFFF;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 100%;
+}
+.form .message a {
+  color: rgb(115, 116, 122);
+  text-decoration: none;
+}
+
+.form .message a:hover{
+    color: rgb(255, 255, 255);
+  }
+
 /* footer */
 #footer{
     color: aliceblue;
@@ -99,6 +177,13 @@ body{
     #body .welcome h2,
     #body .welcome p,
     #body .welcome a,
+    .signup-page,
+    .info,
+    .info h3,
+    .info h4,
+    .form,
+    .form button,
+    .form .message,
     #footer{
         float: none;
         text-align: center;
