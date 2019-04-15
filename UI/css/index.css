@@ -161,6 +161,19 @@ body.image{
     color: rgb(255, 255, 255);
   }
 
+  /* signin page */
+  .signin-page{
+      padding-top: 10%;
+  }
+  #form{
+    position: relative;
+    background: rgb(1, 6, 51);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+  }
+
 /* footer */
 #footer{
     color: aliceblue;
