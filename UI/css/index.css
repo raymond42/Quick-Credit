@@ -174,6 +174,11 @@ body.image{
     text-align: center;
   }
 
+  /* admin */
+  .form h1{
+      color: #FFFFFF;
+  }
+
 /* footer */
 #footer{
     color: aliceblue;
