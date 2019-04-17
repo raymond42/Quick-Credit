@@ -7,7 +7,7 @@ body{
     margin: 0;
   }
   #image{
-      background-image: linear-gradient(rgba(3, 1, 32, 0.5), rgba(0,0,0,0.5)), url(../assets/loan.jpg);
+      background-image: linear-gradient(rgba(2, 9, 56, 0.5), rgba(0, 0, 5, 0.5)), url(../assets/loan.jpg);
   }
 
 /* header */
@@ -133,7 +133,7 @@ body.image{
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     outline: 0;
-    background:  rgb(84, 87, 102);
+    background:  rgb(17, 17, 17);
     
     width: 100%;
     border: 0;
@@ -185,7 +185,7 @@ body.image{
 
   /* application form */
 #application {
-    background-color: rgb(1, 0, 7);
+    background-color: rgba(13, 121, 13, 0.884);
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     padding-right: 30px;
     position: relative;
@@ -199,9 +199,9 @@ header.class{
     background-color: #FFFFFF;
 }
 .buttons{
-    margin: 0;
-    border: 1px solid gray;
-    background-color: black;
+    margin: 0%;
+    border: 1px solid rgb(99, 119, 99);
+    background-color: rgb(2, 2, 2);
     font-size: 100%;
 }
 .top-buttons{
@@ -220,6 +220,7 @@ header.class{
     margin-top: 0;
     margin-right: 3%;
     padding: 5px 20px;
+    padding-bottom: 2px;
     font-family: "Roboto", sans-serif;
     font-size: 100%;
 }
@@ -228,10 +229,33 @@ header.class{
     border: green;
 }
 
+/* table */
+table {
+    padding-top: 10px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+  }
+  #table{
+      height: 95%;
+      width: 100%;
+  }
+  th, td {
+  text-align: left;
+  padding: 16px;
+}
+tr:nth-child(even) {
+    background-color: #cacaca
+  }
+
+
 /* footer */
 #footer{
     color: aliceblue;
     height:40px;
+    padding-top: 2px;
     text-align: center;
 }
 
