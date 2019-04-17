@@ -13,9 +13,10 @@ body{
 /* header */
 .homepage{
     position: relative;
-    margin-left: 1%;
-    margin-top: 3%;
+    /* margin-left: 1%; */
+    margin-top: 2%;
     font-size: 170%;
+    padding-bottom: 5px;
 }
 .homepage a{
     float: left;
@@ -230,13 +231,17 @@ header.class{
 }
 
 /* table */
-table {
+#clients-table{
     padding-top: 10px;
+}
+table {
+    margin-left: 10%;
+    padding: 0;
+    margin-top: 15px;
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
-    border: 1px solid #ddd;
-    background-color: #FFFFFF;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
   }
   #table{
       height: 95%;
@@ -246,10 +251,21 @@ table {
   text-align: left;
   padding: 16px;
 }
-tr:nth-child(even) {
-    background-color: #cacaca
+  .fa-check {
+    color: green;
   }
-
+  .unverified{
+      font-weight: bold;
+  }
+  tr{
+    border-bottom: 1px solid #ddd;
+  }
+   tr:hover{
+    background-color: #f1f1f1f6;
+  }
+  tr.table-heading{
+      background-color: #f1f1f1;
+  }
 
 /* footer */
 #footer{
@@ -258,7 +274,39 @@ tr:nth-child(even) {
     padding-top: 2px;
     text-align: center;
 }
-
+/* clients */  
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(36, 88, 136);
+  }
+  
+  .topnav a {
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a.active {
+    color: rgb(18, 179, 18);
+  }
+  .topnav-right {
+    float: right;
+  }
+  .clicks a{
+      margin-left: 60px;
+  }
+  .clicks a:hover{
+    color: rgb(18, 179, 18);
+  }
+  td a{
+      text-decoration: none;
+      color: black;
+  }
+/* querries */
 @media(max-width: 768px){
     #header,
     #header .homepage,
@@ -287,3 +335,12 @@ tr:nth-child(even) {
         padding-top: 30px;
     }
 }
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 768px) {
+    .topnav a{
+      float: none;
+      display: block;
+      text-align: center;
+      width: 50%;
+    }
+  }
