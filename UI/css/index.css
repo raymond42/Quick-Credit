@@ -260,18 +260,27 @@ table {
   tr{
     border-bottom: 1px solid #ddd;
   }
-   tr:hover{
+   .table tr:hover{
     background-color: #f1f1f1f6;
   }
   tr.table-heading{
       background-color: #f1f1f1;
   }
+  .details{
+    width: 40%;
+    background-color: #ddd;
+  }
+  .details td{
+    text-align: left;
+    font-size: 85%;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
 
 /* footer */
 #footer{
     color: aliceblue;
-    height:40px;
-    padding-top: 2px;
+    height:20px;
     text-align: center;
 }
 /* clients */  
@@ -279,6 +288,7 @@ table {
     position: relative;
     overflow: hidden;
     background-color: rgb(36, 88, 136);
+    border-bottom: green 2px solid;
   }
   
   .topnav a {
@@ -296,10 +306,10 @@ table {
   .topnav-right {
     float: right;
   }
-  .clicks a{
+  .left-nav a{
       margin-left: 60px;
   }
-  .clicks a:hover{
+  .left-nav a:hover{
     color: rgb(18, 179, 18);
   }
   td a{
