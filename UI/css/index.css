@@ -282,6 +282,7 @@ table {
 
 /* footer */
 #footer{
+  margin-top: 24%;
     color: aliceblue;
     text-align: center;
 }
