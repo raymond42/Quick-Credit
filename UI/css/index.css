@@ -276,6 +276,9 @@ table {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
   }
+  .balance{
+    color: red;
+  }
 
 /* footer */
 #footer{
