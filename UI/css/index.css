@@ -1,6 +1,6 @@
 /* body */
 body{
-    background-image: linear-gradient(rgba(3, 1, 32, 0.5), rgba(0,0,0,0.5)), url(../assets/credit.jpg);
+    background-image: linear-gradient(rgba(3, 1, 32, 0.5), rgba(0,0,0,0.5),rgba(3, 1, 32, 0.5), rgba(0,0,0,0.5)), url(../assets/credit.jpg);
     background-size: cover;
     background-position: center;
     padding: 0;
@@ -267,8 +267,12 @@ table {
       background-color: #f1f1f1;
   }
   .details{
-    width: 40%;
-    background-color: #ddd;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin-left: 26%;
+    margin-top: 7%;
+    border: #f1f1f1f6;
+    border-radius: 1%;
   }
   .details td{
     text-align: left;
@@ -278,6 +282,15 @@ table {
   }
   .balance{
     color: red;
+  }
+  tr.lines{
+    border-bottom: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(5, 3, 107, 0.15);
+  }
+  tr.no-lines{
+    color: rgb(0, 0, 0);
+    background-color: rgba(4, 6, 107, 0.15);
   }
 
 /* footer */
