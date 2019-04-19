@@ -11,7 +11,7 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
-  <body>
+  <body class="bgimage">
     <header>
   <!-- Top navigation -->
       <div class="topnav">
@@ -22,8 +22,8 @@
     <!-- Left-aligned links (default) -->
         <div class="left-nav">
           <div class="topnav-left">
-            <a href="./clients.html"class="active">Clients</a>
-            <a href="./applications.html">Loan Applications</a>
+            <a href="./clients.html">Clients</a>
+            <a href="./applications.html" class="active">Loan Applications</a>
             <a href="./current.html">Current loans</a>
             <a href="./repaid.html">Repaid loans</a>
           </div>
@@ -40,44 +40,46 @@
     <div class="client-info">
       <table class="details">
           
-        <tr>
-          <td>Name:</td>
-          <td>Raymond Gakwaya</td>
+        <tr class="lines">
+          <td>Name :</td>
+          <td>Christian Brown</td>
         </tr>
-        <tr>
-          <td>Account no:</td>
+        <tr class="lines">
+          <td>Account no :</td>
           <td>0045-878353-9835</td>
         </tr>
-        <tr>
-          <td>Email:</td>
+        <tr class="lines">
+          <td>Email :</td>
           <td>raymond42.gr@gmail.com</td>
         </tr>
-        <tr>
-          <td>Phone no:</td>
+        <tr class="lines">
+          <td>Phone no :</td>
           <td>+250789932381</td>
         </tr>
-        <tr>
-          <td>Loan amount:</td>
+        <tr class="lines">
+          <td>Loan type :</td>
+          <td>Fixed</td>
+        </tr>
+        <tr class="lines">
+          <td>Loan amount :</td>
           <td>5000,0000 FRW</td>
         </tr>
-        <tr>
-          <td>Paid amount:</td>
-          <td>0 FRW</td>
+        <tr class="no-lines">
+          <td>Repayment duration :</td>
+          <td>4 years</td>
         </tr>
-        <tr>
-          <td>Balance:</td>
-          <td>5000,000 FRW</td>
-        </tr>
-        <tr>
+        <tr class="lines">
           <td>
-            <button><a href="./verified1.html">mark as verified<i class="fa fa-check"></i></a></button>
+            <button><a href="./approved2.html">Approve</a></button>
+            <button><a href="./approved.html">Reject</a></button>
           </td>
+          <td></td>
         </tr>
       </table>
     </div>
   </section>
   <footer id="footer" style="margin-top: 50px">
     <p>QuickCredit, Andela Developer Challenge &copy; Bootcamp Cycle6</p>
-</footer>
+  </footer>
 </body>
 </html>

@@ -59,7 +59,7 @@ body{
 /* section */
 #body{
     margin: 30px;
-    height: 550px;
+    height: 235px;
 }
 
 .welcome {
@@ -190,7 +190,7 @@ body.image{
     padding-right: 30px;
     position: relative;
     margin-right: 15%;
-    height: 75%;
+    height: 170%;
 }
 #application h1{
     margin-top: -7%;
@@ -243,7 +243,6 @@ table {
     background-color: rgb(255, 255, 255);
   }
   #table{
-      height: 95%;
       width: 100%;
   }
   th, td {
@@ -393,13 +392,17 @@ form{
     width: 80%;
     text-align: center;
 }
+footer{
+  display: none;
+}
+
 }
 /* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .topnav a{
       float: none;
       display: block;
       text-align: center;
       width: 50%;
     }
-  }
+  } */
