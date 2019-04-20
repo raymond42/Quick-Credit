@@ -4,11 +4,11 @@ import validateUserSignup from '../helpers/signup';
 
 const signup = (req, res) => {
   const user = users.find(e => e.email === req.body.email);
-  if (user) return res.status(400).send({ status: 400, error: 'The email is already registered' });
+  if (user) return res.status(400).json({ status: 400, error: 'The email is already registered' });
 
   const { error } = validateUserSignup.validation(req.body);
   if (error) {
-    return res.status(400).send({ status: 400, errr: error.details[0].message });
+    return res.status(400).json({ status: 400, error: error.details[0].message });
   }
 
   const id = parseInt(users.length + 1, 10);
@@ -24,7 +24,7 @@ const signup = (req, res) => {
   };
   const token = jwt.sign(newUser, 'SECRET_KEY', { expiresIn: '15min' });
   users.push(newUser);
-  res.status(201).send({
+  res.status(201).json({
     status: 201,
     data: {
       token,
