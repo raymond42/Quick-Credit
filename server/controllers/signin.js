@@ -23,8 +23,8 @@ const signin = (req, res) => {
   const password = users.find(p => p.password === req.body.password);
   //   if password is Incorrect
   if (!password) {
-    return res.status(404).json({
-      status: 404,
+    return res.status(400).json({
+      status: 400,
       error: 'Incorrect password',
     });
   }
