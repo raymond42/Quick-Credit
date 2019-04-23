@@ -31,7 +31,7 @@ describe('signup', () => {
 
   it('user should not be able to signup when there is incorrect data type', (done) => {
     const user = {
-      email: 'raymond@gmail.com',
+      email: 'patrick@gmail.com',
       firstName: 1,
       lastName: 'Gakwaya',
       password: 'Asdfg1',
@@ -65,9 +65,9 @@ describe('signup', () => {
       .post('/api/v1/users/signup')
       .send(user)
       .end((err, res) => {
-        res.should.have.status(400);
+        res.should.have.status(403);
         res.should.be.an('object');
-        res.body.should.have.property('status').eql(400);
+        res.body.should.have.property('status').eql(403);
         res.body.should.have.property('error');
         done();
       });
