@@ -3,6 +3,10 @@ import users from '../models/users';
 import validateUserSignin from '../helpers/signin';
 
 const signin = (req, res) => {
+  const userSchema = {
+    email: req.body.email,
+    password: req.body.password,
+  };
   // Validate user inputs
   const { error } = validateUserSignin.validation(req.body);
   if (error) {
@@ -10,7 +14,7 @@ const signin = (req, res) => {
   }
 
   // Check if the entered email exists
-  const user = users.find(e => e.email === req.body.email);
+  const user = users.find(e => e.email === userSchema.email);
   //   if user doesn't exist
   if (!user) {
     return res.status(404).json({
