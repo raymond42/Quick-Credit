@@ -1,6 +1,6 @@
-const loans = [];
+const applications = [];
 
-const newLoan = {
+const newApplication = {
   id: 1,
   createdOn: '01/01/2019',
   firstname: 'Raymond',
@@ -14,5 +14,5 @@ const newLoan = {
   balance: 6000000,
 };
 
-loans.push(newLoan);
-export default loans;
+applications.push(newApplication);
+export default applications;

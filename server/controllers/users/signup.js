@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
-import users from '../models/users';
-import validateUserSignup from '../helpers/signup';
+import users from '../../models/users';
+import validateUserSignup from '../../helpers/signup';
 
 const signup = (req, res) => {
   const user = users.find(e => e.email === req.body.email);
