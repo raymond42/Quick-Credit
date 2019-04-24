@@ -7,8 +7,8 @@ const user = {
   lastName: 'Gakwaya',
   password: 'Asdfg1',
   address: 'Rwanda',
-  status: 'Verified',
-  isAdmin: 'False',
+  status: 'unverified',
+  isAdmin: 'true',
 };
 users.push(user);
 export default users;
