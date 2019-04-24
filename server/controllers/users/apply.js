@@ -1,7 +1,7 @@
 import moment from 'moment';
-import loans from '../models/loans';
-import validateLoans from '../helpers/loans';
-import users from '../models/users';
+import loans from '../../models/applications';
+import validateLoans from '../../helpers/loans';
+import users from '../../models/users';
 
 const apply = (req, res) => {
   const { error } = validateLoans.validation(req.body);

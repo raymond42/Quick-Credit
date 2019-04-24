@@ -1,4 +1,4 @@
-import history from '../models/history';
+import history from '../../models/history';
 
 const getHistory = (req, res) => {
   const loanHistory = history.find(h => h.id === parseInt(req.params.id, 10));

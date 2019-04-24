@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
-import users from '../models/users';
-import validateUserSignin from '../helpers/signin';
+import users from '../../models/users';
+import validateUserSignin from '../../helpers/signin';
 
 const signin = (req, res) => {
   const userSchema = {
