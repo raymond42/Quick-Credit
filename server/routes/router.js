@@ -6,6 +6,7 @@ import auth from '../middleware/auth';
 import getHistory from '../controllers/users/getHistory';
 import { getApplications, getOneApplication } from '../controllers/admin/applications';
 import { getUsers, getOneUser, markUser } from '../controllers/admin/users';
+import getCurrentLoans from '../controllers/admin/current';
 
 const router = express.Router();
 
@@ -21,5 +22,6 @@ router.get('/application/:id', auth, getOneApplication);
 router.get('/users', auth, getUsers);
 router.get('/user/:id', auth, getOneUser);
 router.patch('/user/:id', auth, markUser);
+router.get('/current', auth, getCurrentLoans);
 
 export default router;
