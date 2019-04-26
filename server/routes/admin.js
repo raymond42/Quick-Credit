@@ -3,6 +3,7 @@ import auth from '../middleware/auth';
 import { getApplications, getOneApplication } from '../controllers/admin/applications';
 import { getUsers, getOneUser, markUser } from '../controllers/admin/users';
 import getCurrentLoans from '../controllers/admin/current';
+import getRepaidLoans from '../controllers/admin/repaid';
 
 const router = express.Router();
 
@@ -23,5 +24,9 @@ router.patch('/user/:id', auth, markUser);
 
 // get current loans
 router.get('/current', auth, getCurrentLoans);
+
+// get repaid loans
+router.get('/repaid', auth, getRepaidLoans);
+
 
 export default router;
