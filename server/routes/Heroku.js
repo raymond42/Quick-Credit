@@ -44,5 +44,4 @@ router.get('/current', getCurrentLoans);
 // get repaid loans
 router.get('/repaid', getRepaidLoans);
 
-
 export default router;
