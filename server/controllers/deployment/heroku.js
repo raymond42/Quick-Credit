@@ -10,7 +10,7 @@ const heroku = (req, res) => {
       get_specific_loan_application: '/api/v1/heroku/users/application/:id',
       get_all_clients: '/api/v1/heroku/admin/users',
       get_specific_client: '/api/v1/heroku/admin/user/:id',
-      mark_client_as_verified: '/api/v1/heroku/admin/mark',
+      mark_client_as_verified: '/api/v1/heroku/admin/mark/:id',
       get_current_loan: '/api/v1/heroku/admin/current',
       get_repaid_loans: '/api/v1/heroku/admin/repaid',
     },
