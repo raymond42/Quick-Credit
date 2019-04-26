@@ -1,25 +1,27 @@
 import express from 'express';
-import signup from '../controllers/users/signup';
-import signin from '../controllers/users/signin';
-import apply from '../controllers/users/apply';
 import auth from '../middleware/auth';
-import getHistory from '../controllers/users/getHistory';
 import { getApplications, getOneApplication } from '../controllers/admin/applications';
 import { getUsers, getOneUser, markUser } from '../controllers/admin/users';
+import getCurrentLoans from '../controllers/admin/current';
 
 const router = express.Router();
 
-// signup
-router.post('/signup', signup);
-// signin
-router.post('/signin', signin);
-// apply
-router.post('/apply', auth, apply);
-router.get('/history/:id', auth, getHistory);
+// get all loan applications
 router.get('/applications', auth, getApplications);
+
+// get single loan application
 router.get('/application/:id', auth, getOneApplication);
+
+// get all users/clients
 router.get('/users', auth, getUsers);
+
+// get one client
 router.get('/user/:id', auth, getOneUser);
+
+// mark a client as verified or unverified
 router.patch('/user/:id', auth, markUser);
+
+// get current loans
+router.get('/current', auth, getCurrentLoans);
 
 export default router;
