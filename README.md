@@ -31,7 +31,7 @@ Quick Credit is an online lending platform that provides short term soft loans t
 | /api/v1/users/history | GET | Get the client to view loan repayment history |
 | /api/v1/admin/users| GET | Get admin to view all clients |
 | /api/v1/admin/user/:id| GET | Get admin to view a specific client with a given id |
-| /api/v1/admin/user/:id| POST | Get admin to mark a client as verified or unverified |
+| /api/v1/admin/mark/:id| POST | Get admin to mark a client as verified or unverified |
 | /api/v1/admin/current| GET | Get the admin to view current loans |
 | /api/v1/admin/repaid | GET | Get the admin to view all repaid loans |
 
