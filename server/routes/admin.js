@@ -20,7 +20,7 @@ router.get('/users', auth, getUsers);
 router.get('/user/:id', auth, getOneUser);
 
 // mark a client as verified or unverified
-router.patch('/user/:id', auth, markUser);
+router.patch('/mark/:id', auth, markUser);
 
 // get current loans
 router.get('/current', auth, getCurrentLoans);
