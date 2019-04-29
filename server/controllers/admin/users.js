@@ -101,8 +101,8 @@ const approve = (req, res) => {
       return;
     }
     if (email.isAdmin !== 'true') {
-      res.status(401).json({
-        status: 401,
+      res.status(400).json({
+        status: 400,
         error: 'Only Admin can approve or reject a user',
       });
       return;
