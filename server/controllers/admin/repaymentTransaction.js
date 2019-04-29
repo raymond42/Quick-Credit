@@ -13,8 +13,8 @@ const transaction = (req, res) => {
     }
     const loanId = history.find(l => l.loanId === parseInt(req.body.loanId, 10));
     if (!loanId) {
-      return res.status(400).json({
-        status: 400,
+      return res.status(404).json({
+        status: 404,
         error: 'transaction history with that loan is not found',
       });
     }
