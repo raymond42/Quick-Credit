@@ -1,9 +1,11 @@
 import express from 'express';
 import auth from '../middleware/auth';
 import { getApplications, getOneApplication } from '../controllers/admin/applications';
-import { getUsers, getOneUser, markUser } from '../controllers/admin/users';
 import getCurrentLoans from '../controllers/admin/current';
 import getRepaidLoans from '../controllers/admin/repaid';
+import {
+  getUsers, getOneUser, markUser, approve,
+} from '../controllers/admin/users';
 
 const router = express.Router();
 
@@ -27,6 +29,9 @@ router.get('/current', auth, getCurrentLoans);
 
 // get repaid loans
 router.get('/repaid', auth, getRepaidLoans);
+
+// reject or approve loan application
+router.patch('/approve/:id', auth, approve);
 
 
 export default router;
