@@ -6,6 +6,7 @@ import getRepaidLoans from '../controllers/admin/repaid';
 import {
   getUsers, getOneUser, markUser, approve,
 } from '../controllers/admin/users';
+import transaction from '../controllers/admin/repaymentTransaction';
 
 const router = express.Router();
 
@@ -32,6 +33,9 @@ router.get('/repaid', auth, getRepaidLoans);
 
 // reject or approve loan application
 router.patch('/approve/:id', auth, approve);
+
+// post repayment transaction
+router.post('/transaction/:id', auth, transaction);
 
 
 export default router;
