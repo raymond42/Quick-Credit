@@ -1,7 +1,7 @@
 const repaidLoans = [];
 
 const loan1 = {
-  id: 1,
+  loanId: 1,
   user: 'Raymond Gakwaya',
   createdOn: '01/01/2019',
   status: 'approved',
@@ -15,7 +15,7 @@ const loan1 = {
 repaidLoans.push(loan1);
 
 const loan2 = {
-  id: 2,
+  loanId: 2,
   user: 'Raymond Gakwaya',
   createdOn: '01/01/2019',
   status: 'approved',
