@@ -3,7 +3,6 @@ import chai from 'chai';
 import chaiHttp from 'chai-http';
 import jwt from 'jsonwebtoken';
 import app from '../server/app';
-import { error } from 'util';
 
 chai.use(chaiHttp);
 chai.should();
