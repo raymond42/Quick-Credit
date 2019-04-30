@@ -13,7 +13,7 @@ Quick Credit is an online lending platform that provides short term soft loans t
 * Javascript
 
 ### GitHub Pages link for UI
-[Epic Mail/UI link](https://raymond42.github.io/Quick-Credit/UI/)
+[Quick Credit/UI link](https://raymond42.github.io/Quick-Credit/UI/)
 
 ---------------------------------------------------------------------
 
