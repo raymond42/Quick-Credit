@@ -1,5 +1,5 @@
 # Quick Credit
-[![Build Status](https://travis-ci.com/raymond42/Quick-Credit.svg?branch=develop)](https://travis-ci.com/raymond42/Quick-Credit) [![Coverage Status](https://coveralls.io/repos/github/raymond42/Quick-Credit/badge.svg?branch=develop)](https://coveralls.io/github/raymond42/Quick-Credit?branch=develop) [![Maintainability](https://api.codeclimate.com/v1/badges/9ccdf49731cb54690b43/maintainability)](https://codeclimate.com/github/raymond42/Quick-Credit/maintainability)
+[![Build Status](https://travis-ci.com/raymond42/Quick-Credit.svg?token=iY182spWW5eb8EbQeTMS&branch=develop)](https://travis-ci.com/raymond42/Quick-Credit) [![Coverage Status](https://coveralls.io/repos/github/raymond42/Quick-Credit/badge.svg?branch=develop)](https://coveralls.io/github/raymond42/Quick-Credit?branch=develop) [![Maintainability](https://api.codeclimate.com/v1/badges/9ccdf49731cb54690b43/maintainability)](https://codeclimate.com/github/raymond42/Quick-Credit/maintainability)
 
 Quick Credit is an online lending platform that provides short term soft loans to individuals. This helps solve problems of financial inclusion as a way to alleviate poverty and empower low income earners.
 
